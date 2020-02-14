@@ -33,8 +33,6 @@ def lunch_lady_app
 def main_dish_selection
     puts "  Please Select A Main Dish"
     input = gets.strip.to_i
-    @cart << input
-    @main_dish[input - 1]
 end
 
 def side_dish1_selection
@@ -67,7 +65,7 @@ end
     puts "      Review Your Order:"
     puts "-------------------------------"
     @cart.each do |item|
-      puts item 
+      puts item
     end
   end
 
