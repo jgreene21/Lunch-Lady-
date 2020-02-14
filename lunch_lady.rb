@@ -40,9 +40,21 @@ end
 def side_dish1_selection
     puts "Please Select Your First Side Dish"
     input = gets.strip.to_i
+  # When 1
+  #     @side_dish1[0]
+  #     puts "#{side_dish1[:item]}"
+  # When 2
+  #     @side_dish1[1]
+  #     puts "#{side_dish1[:item]}"
+  # When 3
+  #     @side_dish1[3]
+  #     puts "#{side_dish1[:item]}"
+  # end
+
     @cart << input
     @side_dish1[input - 1]
-end
+  end
+
 
 def side_dish2_selection
     puts "Please Select Your Second Side Dish"
@@ -55,8 +67,9 @@ end
     puts "      Review Your Order:"
     puts "-------------------------------"
     @cart.each do |item|
-      puts item
+      puts item 
     end
+  end
 
   def submit_order
     puts "      Ready to purchase?"
@@ -84,7 +97,6 @@ end
       exit!
       end
   end
-end
 
 # def display_total
 #     puts      "Here is your total:"
